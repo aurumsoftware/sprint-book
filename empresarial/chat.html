@@ -35,12 +35,37 @@
     font-family: 'Noto Serif SC', serif;
   }
 
-  body {
-    color: #555;
-  }
+     body {
+          color: #000;
+          border-top:10px solid #000;
+          font-weight: 400;
+        }
 
   .badge-secondary {
     background-color: #383838 !important;
+  }
+  .chatlio-chat-header {
+    display: none !important;
+  }
+
+  .chatlio-message-scrollable {
+    padding: 2rem 0 !important;
+    border-radius:12px !important;
+    background-color: #f1f1f1;
+  }
+
+
+
+  .chatlio-message-from-them .chatlio-message-body {
+    background: #ffffff !important;
+    box-shadow: 0px 1px 4px 1px rgba(0,0,0,0.15);
+    font-weight:400;
+  }
+
+  .chatlio-message-from-me .chatlio-message-body {
+    background: #000 !important;
+    box-shadow: 0px 1px 4px 1px rgba(0,0,0,0.15);
+    font-weight:600;
   }
 
 </style>
@@ -53,10 +78,11 @@
 
 
     <div class="container container-fluid mx-auto" style="max-width:1120px;">
+        <img src="../logo.png" alt="Maestri Advogados Associados" style="height: 80px;margin-top: 60px;">
         <div class="row">
             <div class="col-sm-8">
                 <!-- Add this div in your DOM where you want the inline div to be inserted by Chatlio, change height/width to fit your needs -->
-                <div id="chatlioWidgetPlaceholder" style="margin: auto; height: 800px;width:400px;"></div>
+                <div id="chatlioWidgetPlaceholder" style="height: 500px;width:100%;padding-top:4rem;"></div>
         
             </div>
             <div class="col-sm-4" style="padding-top:4rem;">

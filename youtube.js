@@ -16,7 +16,8 @@ $( document ).ready(function() {
         if(textos.length > 0){
             for (let index = 0; index < textos.length; index++) {
                 if($($(textos[index])[0]).text().startsWith("datepicker")){
-                    $($(textos[index])[0]).html('insere um datepicker aqui');
+                    $($(textos[index])[0]).html('<input data-toggle="datepicker">');
+                    $('[data-toggle="datepicker"]').datepicker();
                 }   
             }
         }       

@@ -5,12 +5,8 @@ $( document ).ready(function() {
             for (let index = 0; index < textos.length; index++) {
                 if($($(textos[index])[0]).text().startsWith("https://www.youtube.com")){
                     $($(textos[index])[0]).html('<iframe width="250"  src="'+ $($(textos[index])[0]).text() +'" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>');
-                }
-                
-                
+                }   
             }
-        }
-        
-        
+        }       
     });
 });
